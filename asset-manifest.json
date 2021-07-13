@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/unify/static/css/main.27804757.chunk.css",
-    "main.js": "/unify/static/js/main.fabe415c.chunk.js",
-    "main.js.map": "/unify/static/js/main.fabe415c.chunk.js.map",
+    "main.css": "/unify/static/css/main.68039277.chunk.css",
+    "main.js": "/unify/static/js/main.8d5738e5.chunk.js",
+    "main.js.map": "/unify/static/js/main.8d5738e5.chunk.js.map",
     "runtime-main.js": "/unify/static/js/runtime-main.7865d095.js",
     "runtime-main.js.map": "/unify/static/js/runtime-main.7865d095.js.map",
     "static/js/2.ad92c662.chunk.js": "/unify/static/js/2.ad92c662.chunk.js",
     "static/js/2.ad92c662.chunk.js.map": "/unify/static/js/2.ad92c662.chunk.js.map",
     "index.html": "/unify/index.html",
-    "static/css/main.27804757.chunk.css.map": "/unify/static/css/main.27804757.chunk.css.map",
+    "static/css/main.68039277.chunk.css.map": "/unify/static/css/main.68039277.chunk.css.map",
     "static/js/2.ad92c662.chunk.js.LICENSE.txt": "/unify/static/js/2.ad92c662.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.7865d095.js",
     "static/js/2.ad92c662.chunk.js",
-    "static/css/main.27804757.chunk.css",
-    "static/js/main.fabe415c.chunk.js"
+    "static/css/main.68039277.chunk.css",
+    "static/js/main.8d5738e5.chunk.js"
   ]
 }
