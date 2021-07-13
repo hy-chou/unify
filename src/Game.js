@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Member from "./Member";
 
-const style = Math.random();
 const lvl = 7;
 const lvll = [];
 for (let i = 0; i < lvl; i++) {
   lvll.push(i);
 }
 
-function united(queue) {
+const united = (queue) => {
   let firstQ = queue[0];
   for (let i = 1; i < lvl; i++) {
     if (firstQ !== queue[i]) {
@@ -16,9 +15,9 @@ function united(queue) {
     }
   }
   return true;
-}
+};
 
-function newQ(fill = null) {
+const newQ = (fill = null) => {
   let queue = [];
   while (queue === [] || united(queue)) {
     queue = [];
@@ -27,12 +26,13 @@ function newQ(fill = null) {
     }
   }
   return queue;
-}
+};
 
-function Game(props) {
+function Game() {
+  const [style, setStyle] = useState(Math.random());
   const [queue, setQ] = useState(newQ());
 
-  let handleClick = (i) => {
+  const handleClick = (i) => {
     let nowQ = queue.slice();
 
     nowQ[i] = nowQ[i] ? 0 : 1;
@@ -48,21 +48,23 @@ function Game(props) {
   if (united(queue)) {
     setTimeout(() => {
       setQ(newQ());
+      setStyle(Math.random());
     }, 3000);
+    return <div className="msg">YOU WIN!</div>;
+  } else {
+    return (
+      <div className="queue container">
+        {lvll.map((id, value) => (
+          <Member
+            key={id}
+            value={queue[value]}
+            style={style}
+            onClick={() => handleClick(value)}
+          />
+        ))}
+      </div>
+    );
   }
-
-  return (
-    <div className="queue container">
-      {lvll.map((id, value) => (
-        <Member
-          key={id}
-          value={queue[value]}
-          style={style}
-          onClick={() => handleClick(value)}
-        />
-      ))}
-    </div>
-  );
 }
 
 export default Game;

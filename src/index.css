@@ -16,6 +16,11 @@ body {
   justify-content: center;
   background-color: #000;
   color: #fff;
+  font-size: 3rem;
+}
+
+a {
+  color: inherit;
 }
 
 .container {
@@ -24,14 +29,22 @@ body {
   align-items: center;
   justify-content: center;
 }
-
+.container-col {
+  /* border: 1px solid #fff; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .item {
-  border-bottom: 2px solid #fff;
+  /* border: 2px solid #fff; */
   text-align: center;
   padding: 1rem;
 }
 
 .member {
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
   width: 3rem;
   font-size: 3rem;
   line-height: 3rem;
