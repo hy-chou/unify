@@ -50,7 +50,7 @@ function Game() {
       setQ(newQ());
       setStyle(Math.random());
     }, 3000);
-    return <div className="msg">YOU WIN!</div>;
+    return <div className="message">YOU WIN!</div>;
   } else {
     return (
       <div className="queue container">
